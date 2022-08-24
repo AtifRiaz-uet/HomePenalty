@@ -1,0 +1,40 @@
+IF (EXISTS (SELECT *
+   FROM INFORMATION_SCHEMA.TABLES
+   WHERE TABLE_SCHEMA = 'dbo'
+   AND TABLE_NAME = 'COUNTRYDATA'))
+   BEGIN
+      PRINT 'Database Table Exists'
+   END;
+ELSE
+   BEGIN
+      CREATE TABLE COUNTRYDATA(
+	  CountryID int not null,
+	  CountryName varchar (128) not null,
+	  CountryCurrency varchar (128) not null,
+	  PenaltyPerDay DECIMAL(10,2),
+	  TaxPerDay INT)
+   END;
+
+
+
+
+
+BEGIN
+   IF NOT EXISTS (SELECT * FROM COUNTRYDATA 
+                   WHERE CountryName = 'PAKISTAN')
+   BEGIN
+       INSERT INTO COUNTRYDATA (CountryName,CountryCurrency,PenaltyPerDay,TaxPerDay)
+		VALUES('PAKISTAN','Rs',50,0)
+   END
+END
+BEGIN
+   IF NOT EXISTS (SELECT * FROM COUNTRYDATA 
+                   WHERE CountryName = 'UAE')
+   BEGIN
+       INSERT INTO COUNTRYDATA (CountryName,CountryCurrency,PenaltyPerDay,TaxPerDay)
+		VALUES('UAE','AED',0.8,8)
+   END
+END
+SELECT * FROM COUNTRYDATA
+
+
