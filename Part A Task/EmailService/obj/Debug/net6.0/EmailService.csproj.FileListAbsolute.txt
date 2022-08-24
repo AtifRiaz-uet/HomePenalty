@@ -1,5 +1,0 @@
-C:\Users\HP\source\repos\EmailService\obj\Debug\net6.0\EmailService.csproj.AssemblyReference.cache
-C:\Users\HP\source\repos\EmailService\obj\Debug\net6.0\EmailService.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\HP\source\repos\EmailService\obj\Debug\net6.0\EmailService.AssemblyInfoInputs.cache
-C:\Users\HP\source\repos\EmailService\obj\Debug\net6.0\EmailService.AssemblyInfo.cs
-C:\Users\HP\source\repos\EmailService\obj\Debug\net6.0\EmailService.csproj.CoreCompileInputs.cache

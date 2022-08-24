@@ -1,6 +1,0 @@
-C:\Users\HP\source\repos\SendEmailWithRandomAttachments\obj\Debug\net6.0\SendEmailWithRandomAttachments.csproj.AssemblyReference.cache
-C:\Users\HP\source\repos\SendEmailWithRandomAttachments\obj\Debug\net6.0\SendEmailWithRandomAttachments.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\HP\source\repos\SendEmailWithRandomAttachments\obj\Debug\net6.0\SendEmailWithRandomAttachments.AssemblyInfoInputs.cache
-C:\Users\HP\source\repos\SendEmailWithRandomAttachments\obj\Debug\net6.0\SendEmailWithRandomAttachments.AssemblyInfo.cs
-C:\Users\HP\source\repos\SendEmailWithRandomAttachments\obj\Debug\net6.0\SendEmailWithRandomAttachments.csproj.CoreCompileInputs.cache
-C:\Users\HP\source\repos\SendEmailWithRandomAttachments\obj\Debug\net6.0\SendEmailWithRandomAttachments.MvcApplicationPartsAssemblyInfo.cache

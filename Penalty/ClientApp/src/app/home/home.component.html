@@ -1,0 +1,40 @@
+<div>
+  <form [formGroup]="PenaltyForm" (ngSubmit)="onSubmit()">
+
+
+    <div class="mb-3">
+      <label class="form-label">Select Country</label>
+      <select formControlName="country" class="custom-select mb-3">
+        <option *ngFor="let country of countriesList" [ngValue]="country" class="form-control">{{country}}</option>
+      </select>
+    </div>
+      <div class="mb-3">
+        <label class="form-label">Check In Date</label>
+        <input type="datetime-local" class="form-control" formControlName="checkIn" min="2022-01-01T08:30"/>
+        <div>
+          <small style="color:red">Please Set Time as 12 : 00 AM</small>
+        </div>
+      </div>
+
+      <div *ngIf="(PenaltyForm.get('checkIn'))?.valid">
+        <div class="mb-3">
+        <label class="form-label">Return Date</label>
+        <input type="datetime-local" class="form-control" formControlName="checkOut" min="2022-01-01T08:30" />
+        </div>
+        <div *ngIf="(PenaltyForm.get('checkIn').value) > (PenaltyForm.get('checkOut').value)">
+          <small style="color:red">The Return date Must be After Issue Date</small>
+
+        </div>
+
+      </div>
+
+      
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+      In:{{this.cIN}}::::{{this.chcIn}}
+      Ou:{{this.cOU}}:::::{{this.chcOu}}
+      Days:{{this.days}}
+
+
+  </form>
+</div>
